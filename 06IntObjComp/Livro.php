@@ -1,4 +1,5 @@
 <?php 
+require_once 'Pessoa.php';
 require_once 'Publicacao.php';
 class Livro implements Publicacao{
     //Atributos
@@ -15,16 +16,18 @@ class Livro implements Publicacao{
         echo "<p>Título do livro: " . $this -> getTitulo() . "</p>";
         echo "<p>Autor do livro: " . $this -> getAutor() . "</p>";
         echo "<p>Total de páginas: " . $this -> getTotPaginas() . "</p>";
+        echo "<p> Está sendo lido por " . $this -> leitor -> getNome() . " atualmente na página " . $this -> getPagAtual() . ".</p>";
         echo "<p>-----------------------------------</p>";
     }
 
     //Métodos especiais
-    public function __construct($ti, $au, $tot) {
+    public function __construct($ti, $au, $tot, $le) {
         $this -> titulo = $ti;
         $this -> autor = $au;
         $this -> totPaginas = $tot;
         $this -> pagAtual = 0;
         $this -> aberto = false;
+        $this -> leitor = $le;
     }
 
     private function getTitulo() {
@@ -67,13 +70,16 @@ class Livro implements Publicacao{
 
     public function abrir() {
         $this -> setaberto(true);
-        $this -> setPagAtual(1);
     }
     public function fechar() {
         $this -> setAberto(false);
     }
-    public function folhear() {
-        $this -> setPagAtual($this -> getPagAtual() + 1);
+    public function folhear($p) {
+        if ($p > $this -> getTotPaginas()) {
+            $this -> setPagAtual(0);
+        } else {
+            $this -> setPagAtual($p);
+        }
     }
     public function avancarPag() {
         $this -> setPagAtual($this -> getPagAtual() + 1);

@@ -6,7 +6,7 @@ class Pessoa{
 
     //Métodos 
     public function fazerAniver ($l1, $l2) {
-        
+        $this -> idade ++;
     }
 
     //Métodos especiais
