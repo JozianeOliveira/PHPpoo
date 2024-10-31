@@ -6,11 +6,11 @@ class Lutador{
     //Métodos
     public function apresentar() {
        echo "<p>--------------------</p>";
-       echo "<p>CHEGOU A HORA! O lutador: " . $this -> getNome();
-       echo "veio diretamente de " . $this -> getNacionalidade(); 
-       echo "tem " . $this -> getIdade() . " anos";
-       echo "tem " . $this -> getAltura() . " de altura"; 
-       echo "e pesa " . $this -> getPeso() . "kg";
+       echo "<p>CHEGOU A HORA! O lutador " . $this -> getNome();
+       echo " veio diretamente de " . $this -> getNacionalidade(); 
+       echo " tem " . $this -> getIdade() . " anos";
+       echo " tem " . $this -> getAltura() . " de altura"; 
+       echo " e pesa " . $this -> getPeso() . "kg";
        echo "<br>Ele tem " . $this -> getVitorias() . " vitórias, ";
        echo $this -> getDerrotas() . " derrotas e "; 
        echo $this -> getEmpates() . " empates. </p>";
@@ -21,7 +21,7 @@ class Lutador{
         echo " é um peso " . $this -> getCategoria();
         echo " já ganhou " . $this -> getVitorias() . " vezes, ";
         echo " perdeu " . $this -> getDerrotas() . " vezes e ";
-        echo " empatou " . $this -> getEmpates() . " vezes! </p>";
+        echo "empatou " . $this -> getEmpates() . " vezes! </p>";
 
     }
     public function ganharLuta() {
