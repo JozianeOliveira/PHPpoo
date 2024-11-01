@@ -6,7 +6,7 @@ class Funcionario extends Pessoa{
 
     //Métodos 
     public function mudarTrabalho () {
-        $this -> setSetor(false);
+        $this -> setTrabalhando(! $this -> getTrabalhando());
     }
 
     //Métodos especiais

@@ -6,7 +6,7 @@ class Aluno extends Pessoa{
 
     //Métodos 
     public function cancelarMatr () {
-        $this -> setMatr(false);
+        echo "<p>Matrícula será cancelada</p>";
     }
 
     //Métodos especiais

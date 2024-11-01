@@ -5,16 +5,11 @@ class Pessoa{
     private $nome, $idade, $sexo;
 
     //Métodos 
-    public function fazerAniver ($l1, $l2) {
+    public function fazerAniver () {
         $this -> idade ++;
     }
 
     //Métodos especiais
-    public function __construct($no, $id, $se) {
-        $this -> nome = $no;
-        $this -> idade = $id;
-        $this -> sexo = $se;
-    }
 
     public function getNome() {
         return $this -> nome;
