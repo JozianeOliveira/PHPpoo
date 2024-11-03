@@ -6,10 +6,10 @@ class Bolsista extends Aluno{
 
     //Métodos 
     public function renovarBolsa () {
-        echo "<p>Bolsa será renovada</p>";
+        echo "<p>Renovando bolsa do(a) aluno(a) " . $this -> getNome() . "</p>";
     }
     public function pagarMens () {
-        echo "<p>Mensalidade será paga pelo bolsista</p>";
+        echo "<p>Pagando mensalidade do(a) aluno(a) " . $this -> getNome() . "</p>";
     }
 
     //Métodos especiais

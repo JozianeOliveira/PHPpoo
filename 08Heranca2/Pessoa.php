@@ -1,6 +1,6 @@
 <?php 
 
-class Pessoa{
+abstract class Pessoa{
     //Atributos
     private $nome, $idade, $sexo;
 

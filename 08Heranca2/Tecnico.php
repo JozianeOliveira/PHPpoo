@@ -6,7 +6,7 @@ class Tecnico extends Aluno{
 
     //Métodos 
     public function praticar () {
-        echo "<p>Praticando...</p>";
+        echo "<p> " . $this -> getNome() . " está praticando...</p>";
     }
 
     //Métodos especiais

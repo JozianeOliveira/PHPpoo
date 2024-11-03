@@ -6,7 +6,7 @@ class Aluno extends Pessoa{
 
     //Métodos 
     public function pagarMens () {
-        echo "<p>Mensalidade será paga</p>";
+        echo "<p>Pagando mensalidade do(a) aluno(a) " . $this -> getNome() . "</p>";
     }
 
     //Métodos especiais
