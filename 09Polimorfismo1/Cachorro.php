@@ -1,5 +1,5 @@
 <?php 
-require_once 'AMamifero.php';
+require_once 'Mamifero.php';
 class Cachorro extends Mamifero{
 
     //Métodos 
