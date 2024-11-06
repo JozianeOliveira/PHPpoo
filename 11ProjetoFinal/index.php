@@ -19,6 +19,10 @@
             $a[1] = new Aluno ("Janaina", 41, "F", "Jan");
 
             $vis[0] = new Visualizacao($a[0], $v[2]);
+            $vis[0] -> avaliar();
+            $vis[1] = new Visualizacao($a[0], $v[1]);
+            $vis[1] -> avaliarPorc(85);
+
 
             print_r($v);
             print_r($a);
